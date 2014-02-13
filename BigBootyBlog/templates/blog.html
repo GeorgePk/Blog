@@ -6,29 +6,41 @@
 
     <!-- Bootstrap theme -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
-    <script type="text/javascript" src="script.js"></script>
-    <h1 style="font-size:50px; color:purple; text-align:center">Confession Session</h1>
+    
+    <h1 style="font-size:50px; color:purple; text-align:center"><strong>Confession Session</strong>
+      <img src="http://i693.photobucket.com/albums/vv291/rebelyell89/nun-wearing-habit.jpg" class="img-circle" style="height:200px;width:200px;" alt="25">
+    </h1> 
+    
+    
+    
   </head>
   <body>
     
     
+     
     
-    {% for eric in db_blog %}
-      <div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">{{eric.blog_title}}</h3></div>
-        <div class="panel-body">{{eric.blog_entry}}</div>
-        <div class="post-date">{{eric.created}}</div>
-        <p><a class="btn btn-primary btn-sm" role="button">More...</a></p>
+    
+  {% for eric in db_blog %}
+  <div class="panel panel-default"> 
+    <div class="panel-heading"> 
+        <h3 class="panel-title">{{eric.blog_title}}</h3> </div>
+    <div class="panel-body" id="aaron"> {{eric.blog_entry}} </div>
+    <div class="panel-heading"> 
+      <div class="post-date">{{eric.created}}</div> </div>
+      
+        <!--<button type="button" name="test">Click Me!</button>-->
+       <div id="test"> <a class="btn btn-primary btn-sm" role="button">More...</a> </div>
+        
+       
+      
 
        
-      </div>
-    {% endfor %}
+  </div> 
+  {% endfor %} 
     
     
-       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script src="/static/script.js"></script>
-  </body>
-</html>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script  type="text/javascript" src="/js/script.js"></script>
+      <!--<script src="/static/script.js"></script>-->
   </body>
 </html>
