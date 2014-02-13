@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Post</title>
+</head>
+  <body>
+        <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+     <div class="jumbotron">
+        <h1>Confession Session <span class="glyphicon glyphicon-heart"></span></h1>
+
+
+    
+      <form method="post">
+        <label>
+          <div>Subject <span class="glyphicon glyphicon-cloud"></span></div>
+          <input type="text" name="subject" value="{{blog_title}}">
+        </label>
+        
+        <label>
+          <div>Content</div>
+          <textarea name="content" style="height: 200px; width: 600px;">{{blog_entry}}</textarea>
+          <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">Submit Blog!</button>
+      </span>
+        </label>
+        
+        <label>
+          <div class="error">{{error}}</div>
+        </label>
+        
+    </form>
+    
+  </body>
+</html>

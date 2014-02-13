@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title> George's Blog </title>
+             <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="script.js"></script>
+    <h1 style="font-size:50px; color:purple; text-align:center">Confession Session</h1>
+  </head>
+  <body>
+    
+    
+    
+    {% for eric in db_blog %}
+      <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{eric.blog_title}}</h3></div>
+        <div class="panel-body">{{eric.blog_entry}}</div>
+        <div class="post-date">{{eric.created}}</div>
+        <p><a class="btn btn-primary btn-sm" role="button">More...</a></p>
+
+       
+      </div>
+    {% endfor %}
+    
+    
+       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>
+  </body>
+</html>
